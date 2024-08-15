@@ -1,100 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Mridula Thulasiraman's Resume</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@2/dist/email.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#Resume">Resume</a></li>
-            <li><a href="#Contact">Contact Me</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <div class="main">
-            <h1 class="headings">Mridula <br> Thulasiraman</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate developer.</p>
         </div>
     </section>
-    <section id="about">
-        <div id="pic">
-            <img src="Images/1633391477182.jpeg" alt="">
-            <div id="intro">
-                <h2>Mridula Thulasiraman</h2>
-                <p>Hello, my name is Mridula Thulasiraman, and I am a computer science major at Virginia Polytechnic Institute with a passion for cybersecurity. I have experience in web scraping and analyzing data using Python, as well as customer service skills from my retail associate position at Smithsonian Enterprises. In addition to my studies and work experience, I have participated in various cybersecurity activities and projects, such as the AFA CyberPatriot competition and the Radford RUSecure CTF. I also helped lead a Capture the Flag (CTF) workshop for beginner-level students at the Academies of Loudoun Hackathon. My skills include troubleshooting basic computer hardware and software issues, working with operating systems like Windows and MacOS, and basic Python programming. I also have a good understanding of cloud computing concepts, as well as security policies and procedures. I am certified in CompTIA A+. I am excited to continue developing my skills and knowledge in cybersecurity, and am open to opportunities to contribute to projects and teams in this field. Thank you for considering my portfolio.</p>
-            </div>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </section>
+
+    <section id="portfolio" class="section">
+        <h2>My Work</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">Project 1</div>
+            <div class="portfolio-item">Project 2</div>
+            <div class="portfolio-item">Project 3</div>
         </div>
     </section>
-    <section id="Resume">
-        <h1 class="headings">Education</h1>
-        <p>Virginia Polytechnic Institute</p>
-        <li>Major: Computer Science (2023-2027)</li> 
-        <p>Academies of Loudoun</p>
-        <li>Monroe Advanced Technical Academy- Cybersecurity DE (2022-2023)</li>
-        <p>Northern Virginia Community College</p>
-        <li>Dual-Enrollment student (2021-2023)</li>
-        <p>Freedom High School</p>
-        <li>Advanced Diploma (GPA:4.45)</li>
-        <h2 class="headings">Experience</h2>
-        <p>Data Infrastructure Internship (Mar 2023 - Present)</p>
-        <li>Schemeta Labs LLC</li>
-        <li>Gained experience in web scraping techniques and analyzing data using Python</li>
-        <p>Imax Retail Associate (Nov 2022 - Present)</p>
-        <li>Smithsonian Enterprises</li>
-        <li>Handling Customer inquiries and complaints</li>
-        <li>Handling transactions at the box office and concession stand</li>
-        <h3 class="headings">Activities/Projects</h3>
-        <p>AFA CyberPatriot XV</p>
-        <li>Detected and identified vulnerabilities while also hardening a server and making it more secure, using different tools and techniques</li>
-        <p>Radford RUSecure CTF</p>
-        <li>Completed challenges designed to test knowledge and skill in cybersecurity</li>
-        <p>ManTech Defend the Box CTF</p>
-        <li>Completed challenges designed to test my knowledge in cybersecurity principles- OSINT, cryptography and forensic</li>
-        <p>Academies of Loudoun Hackathon</p>
-        <li>Primary leadership for a team of students running the Capture the Flag (CTF) cybersecurity workshop at the Academies of Loudoun Hackathon. Contributions in the development of CTF challenges/flags and training for beginner-level students</li>
-        <h4 class="headings">Key Skills</h4>
-        <ol>
-            <li>Basic computer hardware and software troubleshooting skills</li>
-            <li>Familiarity with operating systems such as Windows and MacOS</li>
-            <li>Basic python programming</li>
-            <li>Basic understanding of cloud computing concepts, such as storage and virtualization</li>
-            <li>Proficiency in basic computer skills, such as using Microsoft Office, email, and web browsing</li>
-            <li>Understanding of security policies and procedures, including incident response and disaster recovery</li>
-            <li>Understanding of basic Scrum principles</li>
-            <li>Some experience with Adobe Creative Cloud (Illustrator, Photoshop, Canva, express)</li>
-            <li>Familiarity with Linux systems</li>
-            <li>Basic knowledge on the AWS cloud computing platform</li>
-            <li>Familiarity with HTML web development framework</li>
-        </ol>
-        <h5 class="headings">Certification</h5>
-        <li>CompTIA A+</li>
-    </section>
-    <section id="Contact">
-        <h1 class="headings">Contact</h1>
-        <form id="contact-form" class="form">
-            <input type="text" name="name" class="input" placeholder="Enter Your Name" required>
-            <input type="email" name="email" class="input" placeholder="Enter Your Email" required>
-            <textarea name="message" id="msg" cols="30" rows="10" placeholder="Enter Your Message" required></textarea>
-            <input type="submit" value="SEND" id="send">
+
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 
-            emailjs.sendForm('service_zk7l2je', 'template_default', this)
-                .then(function() {
-                    alert('Your message has been sent successfully!');
-                }, function(error) {
-                    alert('Failed to send the message. Please try again.');
-                });
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
