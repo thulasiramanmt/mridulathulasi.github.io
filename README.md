@@ -1,5 +1,4 @@
 Basic Personal Resume Website
 
 
-website: 
- https://thulasiramanmt.github.io/mridulathulasi.github.io/
+website:  https://thulasiramanmt.github.io/mridulathulasi.github.io/
