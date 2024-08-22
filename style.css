@@ -1,5 +1,7 @@
 /* Animation */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Charter:400,700');
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -87,3 +89,36 @@ canvas#Matrix {
         padding: 4px;
     }
 }
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-style: initial;
+    color: white;
+    text-align: center;
+}
+
+h2 a {
+    text-decoration: none; 
+    color: inherit;
+    margin: 0 15px; 
+    font-size: 1.2rem; 
+}
+
+nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+nav ul li {
+    margin: 0 15px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    color: #fff; 
+    font-size: 1.1rem; 
+}
+
